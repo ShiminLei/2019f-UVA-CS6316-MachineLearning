@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:      pretty
+baseurl: 	    	/2019f-UVA-CS6316-MachineLearning/
+url:            https://qiyanjun.github.io/
+
+# Setup
+title:            	"19Fall CS6316 - Machine Learning"
+tagline:          	"2019 Fall"
+description:        "MoWe 2:00PM - 3:15PM @ MEC 205"
+future: 			true
+
+author:
+  name:           'Yanjun Qi'
+  url:            https://twitter.com/Qdatalab
+
+
+collections:
+  contents:
+    sort_by: LOrder
+    output: true

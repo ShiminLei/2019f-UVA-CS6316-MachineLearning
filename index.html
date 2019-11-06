@@ -1,0 +1,109 @@
+---
+layout: default
+title: Home
+desc: 'Website for 2019-Fall-UVA-CS 6316 Machine Learning (Master)'
+---
+
+<p><a name="topPage"></a></p>
+
+<div>
+
+<ul>
+  <li>Feel free to submit <a href="https://github.com/qiyanjun/2019f-UVA-CS6316-MachineLearning/" target="_blank" >pull requests</a>
+when you find my typos or have comments. The covered materials are by no means an exhaustive list of machine learning, but are contents that we have taught or plan to teach in my machine learning introductory course.
+</li>
+  <li>
+    Please pay attention to special dates: <font color="#990000"><b>(0902)</b></font> We have class; <font color="#990000"><b>(0910)</b></font> Add/Drop Last day; <font color="#990000"><b>(1007)</b></font> Reading day; <font color="#990000"><b>(1127)</b></font> Thanksgiving Break; <font color="#990000"><b>(1206)</b></font> Last lesson day of Fall semester.  
+  </li>
+</ul>
+</div>
+
+
+<hr>
+
+<h1>  Course Schedule and Notes  </h1>
+
+
+<p><font color="#990000"><b>The lecture schedule below is tentative and is continually subject to change; We will move at whatever pace we find comfortable.&nbsp;</b></font>&nbsp;</p>
+
+<div class="posts">
+
+<table id="datatab3"  summary="Table of Lectures" border="1">
+<tr>
+ <h3><b>
+  <th>Date</th>
+  <th>Week</th>
+  <th>Qz</th>
+  <th>Title</th>
+  <th>Lecture</th>
+  <th>ToRead</th>
+  <th>Video</th>
+  <th>Extra Read</th>
+  </b>
+  </h3>
+</tr>
+
+{% assign counter = 0 %}
+{% assign Qcounter = 0 %}
+
+{% assign currentTag = 0 %}
+{% assign sorted = site.contents %}
+
+{% assign ddates = "0828|0902|0904|0909|0911|0916|0918|0923|0925|0930|1002|1009|1014|1016|1021|1023|1028|1030|1104|1106|1111|1113|1118|1120|1125|1202|1204|1206" | split: "|" %}
+
+{% assign dweeks = "W1|W2|W2|W3|W3|W4|W4|W5|W5|W6|W6|W7|W8|W8|W9|W9|W10|W10|W11|W11|W12|W12|W13|W13|W14|W15|W15|W15" | split: "|" %}
+
+{% assign Qdates = "|Q0|||Q1||Q2||Q3||Q4||Q5|||Q6||Q7||Q8||Q9||Q10||Q11||Q12|" | split: "|" %}
+
+{% for post in sorted %}
+
+{% if currentTag == 0 %}
+  {% unless post.lectureVersion contains 'current'  %}
+    <tr><td align="center" bgcolor="#bafdfb"  colspan="7"><font color="#990000"><b>WE ARE HERE</b></font></td></tr>
+    {% assign currentTag=currentTag | plus:1 %}
+  {% endunless %}
+{% endif %}
+
+
+<tr>
+
+<td>{{ ddates[counter] }} </td>
+<td>{{ dweeks[counter] }}</td>
+{% assign counter=counter | plus:1 %}
+
+{% if  Qdates[counter]  contains 'Q'  %}
+<td>{{ Qdates[counter] }}</td>
+{% assign Qcounter=Qcounter | plus:1 %}
+{% else %}
+<td></td>
+{% endif %}
+
+<td>{{ post.title }}</td>
+
+{% if post.lecture %}
+<td><a href="{{ site.baseurl }}/Lectures/{{ post.lecture }}.pdf"> Slides: {{ post.lecture }}</a></td>
+{% else %}
+<td></td>
+{% endif %}
+
+
+{% if post.extraContent %}
+<td><a href="{{ site.baseurl }}/Lectures/{{ post.extraContent }}.pdf"> {{ post.extraContent }}</a></td>
+{% else %}
+<td></td>
+{% endif %}
+
+<td>{{ post.video }} </td>
+
+<td>{{ post.notes }} </td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+
+<div style="position: fixed; bottom: 76px; right:10px; width: 88px; height: 36px; background-color: #FFCF79;">
+<a style="position: fixed; bottom:80px; right:10px;" href="#topPage" title="Back to Top">BackTop</a>
+</div>
