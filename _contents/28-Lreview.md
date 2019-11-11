@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Review
-lecture: L22-review
-lectureVersion: 
+lecture: L16-PCA 
+lectureVersion: L22-review
 extraContent: L22-AfewUseful-Pedro  
 notes: <a href="https://github.com/afshinea/stanford-cs-229-machine-learning/tree/master/en">[ML Cheatsheets]</a> 
 tags:
