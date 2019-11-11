@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Gaussian NaiveBC 
-lecture: L17b-GenerDiscr
+title: NaiveBC on Text 
+lecture: L17c-NBCtext 
 lectureVersion: current
-extraContent: L17c-NBCtext 
+extraContent: L17b-GenerDiscr  
 notes:  
 tags:
 - 3Classification
