@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Boosting
+title:  RF and Boosting
 lecture: L18b-Boosting
 lectureVersion: 
 extraContent: L22-review  
