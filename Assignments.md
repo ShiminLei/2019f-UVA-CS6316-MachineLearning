@@ -92,9 +92,9 @@ desc: "Information of Assignments and Final Project for 2019 Fall UVa CS 6316 Ma
 | Q6   | [URL](https://forms.gle/mVBdT3LLnjvdSqFf7) |
 | Q7   | [URL](https://forms.gle/uoipgqGbjV5BsrHH7) |
 | Q8   | [URL](https://forms.gle/pUFSQix4eNtyT9zA7) |
-| Q9   |  |
-| Q10   |  |
-| Q11   |  |
+| Q9   | [URL](https://forms.gle/Jf7vuhpsx1w5rNdx9)  |
+| Q10   | [URL](https://forms.gle/qFzwDczFUoqWMeDe6)  |
+| Q11   | [URL](https://forms.gle/88D7VHnEQfE1hsWc8)  |
 | Q12   |  |
 
 
